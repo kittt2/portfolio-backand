@@ -8,7 +8,10 @@ dotenv.config();
 connectDb();
 
 const app = express()
-app.use(cors());
+app.use(cors({
+  origin: "https://portfolio-kappa-eight-64.vercel.app",
+  optionsSuccessStatus: 200
+}));
 app.use(express.json());
 app.use("/api/v1/response",form);
 app.get('/', function (req, res) {
