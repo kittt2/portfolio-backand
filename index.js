@@ -9,7 +9,7 @@ connectDb();
 
 const app = express()
 app.use(cors({
-  origin: "https://portfolio-kappa-eight-64.vercel.app",
+  origin: "https://nitinsaini.vercel.app",
   optionsSuccessStatus: 200
 }));
 app.use(express.json());
